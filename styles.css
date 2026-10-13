@@ -1038,3 +1038,37 @@ button {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Taste-inspired portfolio preview: editorial hierarchy, restrained motion, generous rhythm. */
+:root,[data-theme="light"] {--bg:#f6f5f1;--bg-elevated:#fff;--surface:#ffffff;--surface-strong:#f0eee8;--text:#171915;--text-soft:#414640;--text-muted:#646b61;--line:rgba(30,41,31,.15);--accent:#cc6948;--accent-strong:#b64c2a;--accent-soft:#f5e2d8;--cool-soft:#e5ebdd;}
+[data-theme="dark"] {--bg:#151715;--bg-elevated:#1b1e1a;--surface:#1d211d;--surface-strong:#282e27;--text:#f5f4ed;--text-soft:#d5d7ce;--text-muted:#a3aa9d;--line:rgba(231,239,223,.16);--accent:#f19a70;--accent-strong:#f6b18b;--accent-soft:#46342c;--cool-soft:#26362e;}
+body{font-family:"SF Pro Text",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;}
+.spotlight-layer{opacity:.2;}
+.hero-intro{padding-top:clamp(3.5rem,8vw,8rem);padding-bottom:clamp(3rem,7vw,7rem);gap:clamp(2.5rem,5vw,5.5rem);border-bottom:1px solid var(--line);}
+.hero-name{font-size:clamp(2.7rem,5vw,5.4rem);letter-spacing:-.055em;line-height:.96;}
+.hero-role{font-family:"Raleway",sans-serif;font-weight:700;font-size:clamp(2.5rem,4.3vw,4.6rem);line-height:1.08;letter-spacing:-.055em;text-wrap:balance;max-width:14ch;}
+.hero-copy{position:relative;}
+.hero-intro-text{max-width:57ch;font-size:clamp(1rem,1.3vw,1.2rem);line-height:1.85;color:var(--text-soft);}
+.hero-availability{display:flex;align-items:center;gap:.65rem;font-size:.88rem;letter-spacing:.01em;}
+.availability-dot{width:.58rem;height:.58rem;border-radius:50%;background:#59a76d;box-shadow:0 0 0 4px rgba(89,167,109,.12);}
+.hero-portfolio-cta{display:inline-flex;align-items:center;gap:1.35rem;text-decoration:none;padding:.92rem 1.25rem;margin-top:1.3rem;border:1px solid var(--text);border-radius:999px;font-weight:650;font-size:.9rem;transition:background .2s,color .2s,transform .2s;}
+.hero-portfolio-cta:hover{background:var(--text);color:var(--bg);transform:translateY(-2px);}
+.hero-portfolio-cta span{font-size:1.25rem;}
+.hero-stack-title{letter-spacing:.16em;}
+.hero-stack-tags li{border-radius:.4rem;font-size:.79rem;padding:.4rem .72rem;background:transparent;}
+.hero-copy-portrait-frame{width:min(9rem,32%);margin-right:1.5rem;}
+.hero-portrait-image{border-radius:1rem;filter:saturate(.8);}
+.hero-portrait-image:hover{filter:saturate(1);}
+.portfolio-heading{display:flex;justify-content:space-between;align-items:end;gap:3rem;padding:clamp(3rem,7vw,6rem) 0 1.8rem;}
+.portfolio-heading h2{font-family:"Raleway",sans-serif;font-size:clamp(2.3rem,5vw,4.7rem);line-height:1.05;letter-spacing:-.055em;margin:.55rem 0 0;}
+.portfolio-eyebrow{font-size:.7rem;letter-spacing:.22em;font-weight:700;color:var(--accent-strong);}
+.heading-period{color:var(--accent);}
+.portfolio-heading p{font-size:.95rem;line-height:1.7;color:var(--text-muted);max-width:28ch;margin:0 0 .3rem;}
+.timeline-entry-card{transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;}
+.timeline-entry-card:hover{transform:translateY(-2px);box-shadow:0 15px 38px rgba(0,0,0,.055);}
+.timeline-entry-title{letter-spacing:-.025em;}
+.timeline-entry-tags .tag-list li{border-radius:.4rem;}
+.timeline-entry-text{line-height:1.65;}
+.timeline-segmented-control{border-radius:999px;}
+@media(max-width:700px){.portfolio-heading{display:block;padding-top:3.2rem}.portfolio-heading p{margin-top:1rem;max-width:42ch}.hero-intro{padding-top:3rem}.hero-role{font-size:clamp(2.2rem,10vw,3.3rem)}.hero-copy-portrait-frame{width:7rem}.hero-portfolio-cta{margin-top:1rem}}
+@media(prefers-reduced-motion:reduce){.hero-portfolio-cta,.timeline-entry-card{transition:none}.hero-portfolio-cta:hover,.timeline-entry-card:hover{transform:none}}
